@@ -5,8 +5,8 @@
     <div class="bg-dark" id="social-footer-menu">
         <div class="container">
             <div class="row justify-content-center">
-                <a>
-                    <i class="fab fa-github fa-2x text-white"> </i>
+                <a href="https://github.com/cuciusca">
+                    <i class="fab fa-github fa-2x text-white"></i>
                 </a>   
             </div>
         </div>

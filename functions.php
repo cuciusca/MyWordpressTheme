@@ -14,6 +14,21 @@ endif;
 
 add_action('after_setup_theme', 'my_setup');
 
+function my_widgets_init() 
+{
+	register_sidebar(array(
+		'name'          => esc_html__( 'Right Sidebar', 'my' ),
+		'id'            => 'right-sidebar',
+		'description'   => esc_html__('Add widgets here.', 'my'),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+}
+
+add_action( 'widgets_init', 'my_widgets_init' );
+
 function my_styles()
 {
     wp_enqueue_style('bootstrap-css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css');
