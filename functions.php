@@ -16,7 +16,9 @@ add_action('after_setup_theme', 'my_setup');
 
 function my_styles()
 {
-    wp_enqueue_style('bootstrap_css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css');
+    wp_enqueue_style('bootstrap-css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css');
+    wp_enqueue_style('font-awesome-css', 'https://use.fontawesome.com/releases/v5.1.0/css/all.css');
+
     wp_enqueue_style('my-style', get_stylesheet_uri());
 }
 
@@ -24,9 +26,9 @@ add_action('wp_enqueue_scripts', 'my_styles');
 
 function my_scripts()
 {
-    wp_enqueue_script('jquerry_js', 'https://code.jquery.com/jquery-3.3.1.slim.min.js');
-    wp_enqueue_script('popper_js', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js');
-    wp_enqueue_script('bootstrap_js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js');
+    wp_enqueue_script('jquerry-js', 'https://code.jquery.com/jquery-3.3.1.slim.min.js');
+    wp_enqueue_script('popper-js', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js');
+    wp_enqueue_script('bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js');
 }
 
 add_action( 'wp_enqueue_scripts', 'my_scripts');

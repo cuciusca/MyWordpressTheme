@@ -9,3 +9,18 @@ header
     margin-top: 62px;
     margin-bottom: 40px;
 }
+
+footer 
+{
+    margin-top: 40px;
+}
+
+#social-footer-menu
+{
+    padding: 20px 0px;
+}
+
+#copy-footer-menu
+{
+    padding: 10px 0px;
+}
