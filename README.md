@@ -1,2 +1,2 @@
-# MyWordpressTheme
-A simple wordpress theme developed for a personal blog
+# My Wordpress Theme
+Very simple wordpress theme developed for my personal blog.

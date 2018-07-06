@@ -32,8 +32,11 @@ add_action( 'widgets_init', 'my_widgets_init' );
 function my_styles()
 {
     wp_enqueue_style('bootstrap-css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css');
-    wp_enqueue_style('font-awesome-css', 'https://use.fontawesome.com/releases/v5.1.0/css/all.css');
 
+    wp_enqueue_style('font-awesome-brands-css', 'https://use.fontawesome.com/releases/v5.1.0/css/brands.css');
+    wp_enqueue_style('font-awesome-css', 'https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css');
+
+    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css?family=Roboto+Slab');
     wp_enqueue_style('my-style', get_stylesheet_uri());
 }
 

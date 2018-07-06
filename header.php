@@ -6,7 +6,7 @@
 
     <title>
         <?php if(is_front_page() || is_home())
-            echo get_bloginfo('name');
+            echo bloginfo('name');
          else
             echo wp_title(''); ?>
     </title>
@@ -35,7 +35,17 @@
         </div>
     </nav>
         
+    
+    <?php if(is_front_page() || is_home()) : ?>
+        <div class="bg-secondary" id="header-menu">
+            <div class="container">
+                <header class="row justify-content-center">
+                    <div>
+                        <h1 class="text-white"><?php bloginfo('name'); ?></h1>
+                        <p class="text-white text-center"><?php bloginfo('description'); ?></p>
+                    </div>
+                </header><?php endif ?>
+            </div>
+        </div>
     <div class="container">
-        <header class="row">
-        </header>
     
