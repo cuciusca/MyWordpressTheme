@@ -8,6 +8,7 @@ html { margin: 0; }
 body 
 {
     font-family: 'Roboto Slab', serif;
+    
     margin-top: 55px; 
 }
 
@@ -18,11 +19,6 @@ header
     padding-bottom: 40px;    
 
     margin-bottom: 40px;
-}
-
-nav #header-menu 
-{ 
-    box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
 }
 
 #social-footer-menu { padding: 20px 0px; }

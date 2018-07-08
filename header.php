@@ -4,18 +4,11 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>
-        <?php if(is_front_page() || is_home())
-            echo bloginfo('name');
-         else
-            echo wp_title(''); ?>
-    </title>
-
     <?php wp_head(); ?>
 </head>
 
 <body class="bg-light">
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark shadow">
         <div class="container">
             <a class="navbar-brand" href="<?php echo esc_url(home_url( '/' )); ?>"><?php bloginfo('name'); ?></a>
 
@@ -27,17 +20,17 @@
                     </button>
 
                 <?php wp_nav_menu(array(
-                    'theme_location' => $my_location,
+                    'theme_location'  => $my_location,
                     'container_class' => 'collapse navbar-collapse',
-                    'container_id' => 'navbartoggle',
-                    'menu_class' => 'navbar-nav',));
+                    'container_id'    => 'navbartoggle',
+                    'menu_class'      => 'navbar-nav',));
                 endif ?>
         </div>
     </nav>
         
     
     <?php if(is_front_page() || is_home()) : ?>
-        <div class="bg-secondary" id="header-menu">
+        <div class="bg-secondary shadow-sm">
             <div class="container">
                 <header class="row justify-content-center">
                     <div>
