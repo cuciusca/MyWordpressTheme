@@ -14,7 +14,8 @@ header
     padding-bottom: 40px;
 }
 
-.card { border-radius: 0; }
+.card      { border-radius: 0px; }
+.card-deck { margin-top: 30px; }
 
 #social-footer-menu { padding: 20px 0px; }
 #copy-footer-menu   { padding: 10px 0px; }

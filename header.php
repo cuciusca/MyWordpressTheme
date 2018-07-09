@@ -30,12 +30,12 @@
     </nav>
         
     <?php if(is_front_page() || is_home()) : ?>
-        <div class="bg-secondary shadow-sm">
+        <div class="card bg-secondary shadow-sm">
             <div class="container">
                 <header class="row justify-content-center">
                     <div>
-                        <h1 class="text-white"><?php bloginfo('name'); ?></h1>
-                        <p class="text-white text-center"><?php bloginfo('description'); ?></p>
+                        <h1 class="card-title text-white"><?php bloginfo('name'); ?></h1>
+                        <p class="card-text text-white text-center"><?php bloginfo('description'); ?></p>
                     </div>
                 </header><?php endif ?>
             </div>

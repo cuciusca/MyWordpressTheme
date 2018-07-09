@@ -17,13 +17,13 @@ add_action('after_setup_theme', 'my_setup');
 function my_widgets_init() 
 {
 	register_sidebar(array(
-		'name'          => esc_html__( 'Right Sidebar', 'my' ),
+		'name'          => esc_html__('Right Sidebar', 'my'),
 		'id'            => 'right-sidebar',
 		'description'   => esc_html__('Add widgets here.', 'my'),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_widget' => '<section class="card"><div class="card-body">',
+		'after_widget'  => '</div></section>',
+		'before_title'  => '<h4 class="card-title">',
+		'after_title'   => '</h4>',
 	) );
 }
 
