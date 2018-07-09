@@ -10,7 +10,8 @@
 <body class="bg-light">
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark shadow">
         <div class="container">
-            <a class="navbar-brand" href="<?php echo esc_url(home_url( '/' )); ?>"><?php bloginfo('name'); ?></a>
+            <a class="navbar-brand" href="<?php echo esc_url(home_url( '/' )); ?>">
+                                          <?php bloginfo('name'); ?></a>
 
             <?php $my_location = 'navigation-menu';
             
@@ -28,7 +29,6 @@
         </div>
     </nav>
         
-    
     <?php if(is_front_page() || is_home()) : ?>
         <div class="bg-secondary shadow-sm">
             <div class="container">

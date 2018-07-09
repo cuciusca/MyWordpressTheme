@@ -4,22 +4,17 @@ Theme Name: My Wordpress Theme
 
 */
 
-html { margin: 0; }
-body 
-{
-    font-family: 'Roboto Slab', serif;
-    
-    margin-top: 55px; 
-}
+html { font-family: 'Roboto Slab', serif; }
+body { margin-top: 55px; }
 
 footer { margin-top: 40px; }
 header 
 {
     padding-top: 70px;
-    padding-bottom: 40px;    
-
-    margin-bottom: 40px;
+    padding-bottom: 40px;
 }
+
+.card { border-radius: 0; }
 
 #social-footer-menu { padding: 20px 0px; }
 #copy-footer-menu   { padding: 10px 0px; }
