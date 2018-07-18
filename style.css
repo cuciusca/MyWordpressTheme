@@ -7,16 +7,10 @@ Theme Name: My Wordpress Theme
 html { font-family: 'Roboto Slab', serif; }
 body { margin-top: 55px; }
 
-footer { margin-top: 40px; }
-header 
-{
-    padding-top: 70px;
-    padding-bottom: 40px;
-}
+main   { margin:  30px 0; }
+header { padding: 45px 0; }
 
-.card      { border-radius: 0px; }
-.card-deck { margin-top: 30px; }
+#social-footer-menu { padding: 20px 0; }
+#copy-footer-menu   { padding: 10px 0; }
 
-#social-footer-menu { padding: 20px 0px; }
-#copy-footer-menu   { padding: 10px 0px; }
-
+.card { border-radius: 0; }

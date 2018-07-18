@@ -1,9 +1,7 @@
-<?php
+<?php if (is_active_sidebar('right-sidebar')) : ?>
 
-if (is_active_sidebar('right-sidebar')) : ?>
-
-<aside class="col-md-3 card-deck">
-	<?php dynamic_sidebar('right-sidebar'); ?>
-</aside>
+    <aside class="col-lg-3">
+        <?php dynamic_sidebar('right-sidebar'); ?>
+    </aside>
 
 <?php endif;
