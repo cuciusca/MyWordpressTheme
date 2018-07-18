@@ -9,7 +9,9 @@
 
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="card-title"><?php the_title(); ?></h4>
+                            <a href="<?php echo get_permalink(); ?>">
+                                <h4 class="card-title"><?php the_title(); ?></h4>
+                            </a>
                             <p class="card-text"><?php the_content(); ?></p>
 
                             <p class="card-text">
