@@ -1,16 +1,43 @@
-/*!
+/*
 
 Theme Name: My Wordpress Theme
+Author: Adrian Iusca
+License: MIT
 
 */
 
-html { font-family: 'Roboto Slab', serif; }
-body { margin-top: 55px; }
+@media (min-width: 576px) {
+    .container { max-width: 680px; }
+}
+
+@media (min-width: 768px) {
+    .container { max-width: 860px; }
+}
+
+@media (min-width: 992px) {
+    .container { max-width: 1100px; }
+}
+
+@media (min-width: 1200px) {
+    .container { max-width: 1380px; }
+}
 
 main   { margin:  30px 0; }
 header { padding: 45px 0; }
 
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+
+    margin-top: 55px;
+}
+
+h1, h2, h3, h4 { font-weight: 600; }
+p .text-muted  { font-weight: 300; }
+
 #social-footer-menu { padding: 20px 0; }
+
 #copy-footer-menu   { padding: 10px 0; }
+#copy-footer-menu a { font-weight: 100; }
 
 .card { border-radius: 0; }

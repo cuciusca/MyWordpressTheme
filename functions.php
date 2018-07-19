@@ -36,7 +36,7 @@ function my_styles()
     wp_enqueue_style('font-awesome-brands-css', 'https://use.fontawesome.com/releases/v5.1.0/css/brands.css');
     wp_enqueue_style('font-awesome-css', 'https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css');
 
-    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css?family=Roboto+Slab');
+    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css?family=Work+Sans:300,400,600');
     wp_enqueue_style('my-style', get_stylesheet_uri());
 }
 
